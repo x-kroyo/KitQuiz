@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    @apply block mb-1.5
+}
+
+.custom-radio input {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.custom-radio:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%232563eb'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%232563eb' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+.containr {
+    margin-top: 57px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+    .containr {
+        margin-left: 256px;
+        margin-bottom: 0px;
+    }
+}
